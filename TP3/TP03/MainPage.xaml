@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP03.MainPage"
+             Title="TP 3 - Rastreamento"
+             BackgroundColor="{StaticResource FundoAzulClaro}">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="MainPageStyles.xaml"/>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="*, Auto">
+
+        <VerticalStackLayout Grid.Row="0"
+                             Padding="30"
+                             Spacing="15"
+                             VerticalOptions="Center" 
+                             HorizontalOptions="FillAndExpand">
+
+            <Label Text="Insira o código de rastreio no campo abaixo:"
+                   FontSize="16"
+                   TextColor="{StaticResource TextoAzulMarinho}"
+                   HorizontalOptions="Center"/>
+
+            <Entry Placeholder="Digite o código de rastreamento"
+                   x:Name="CodigoRastreamentoEntry"
+                   Style="{StaticResource EntryStyle}"/>
+
+            <Button Text="Rastrear"
+                    Clicked="OnRastrearClicked"
+                    Style="{StaticResource ButtonStyle}"/>
+
+        </VerticalStackLayout>
+
+        <Frame Grid.Row="1"
+               BackgroundColor="{StaticResource TextoAzulMarinho}"
+               CornerRadius="0"
+               Padding="10">
+            <Label Text="Desenvolvido por Vinicius Pontes e Eduardo Barbosa"
+                   FontSize="12"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Frame>
+
+    </Grid>
+</ContentPage>

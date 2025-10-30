@@ -1,0 +1,58 @@
+###########################
+# Arquivos de Build e Pastas
+###########################
+[Bb]in/
+[Oo]bj/
+*.log
+*.vspscc
+*.vssscc
+*.tmp
+
+# .NET MAUI e .NET Core/Standard
+# Resultados de build intermediários e finais
+# Inclui as pastas de saída de Debug/Release
+[Dd]ebug/
+[Rr]elease/
+
+# NuGet
+# Ignora pastas de cache de pacotes
+*.nupkg
+.nuget/
+# A pasta 'packages' é ignorada por convenção em muitos projetos .NET
+packages/
+
+# Arquivos de configurações de usuário e IDE
+##########################################
+# Arquivos gerados pelo Visual Studio (configurações de usuário)
+*.user
+*.suo
+*.sln.docstates
+# Pasta de cache do Visual Studio 2017/2019/2022
+.vs/
+
+# Arquivos de crash e mono
+mono_crash.*
+
+# Arquivos de teste
+TestResults/
+*.coverage
+*.trx
+
+# Arquivos do Rider (IDE JetBrains)
+.idea/
+
+# Android/iOS/Mac Catalyst Build Caches
+# Ignora caches específicos de plataforma
+platform-tool-cache/
+**/*.aotdata
+**/*.apk
+**/*.aab
+**/*.ipa
+**/*.app
+**/*.xcarchive
+
+# Configurações do VS Code (se estiver usando VS Code)
+.vscode/
+
+# Arquivos de Publish (pode ser necessário remover o comentário se você publica para Azure, etc.)
+# Publish/
